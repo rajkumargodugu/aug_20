@@ -1,0 +1,429 @@
+1. Write a program to copy the elements of one array into another array
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    int b []=new int[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        b[i]=a[i];
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	         System.out.print(b[i]+" ");
+	    }
+	}
+}
+2.Write a program to array elements print all Even number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]%2==0)
+	        {
+	            System.out.print(a[i]+" ");
+	        }
+	       
+	        
+	    }
+	    
+	}
+}
+3. Write a program to array elements print all Odd number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]%2!=0)
+	        {
+	            System.out.print(a[i]+" ");
+	        }
+	       
+	        
+	    }
+	    
+	}
+}
+
+4.4. Write a program to search an element in an array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    int x=sc.nextInt();
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]==x)
+	        {
+	            System.out.print("element is found ");
+	        }
+	        else
+	        {
+	            System.out.print("element is not found");
+	        }
+	       
+	        
+	    }
+	    
+	}
+}
+5.Write a program to array elements to print sum of Negative Numbers
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]<0)
+	        {
+	            System.out.print(a[i]+" ");
+	        }
+	        
+	       
+	        
+	    }
+	    
+	}
+}
+6. Write a program to Print Unique Elements in Array
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    Set<Integer>st=new HashSet<>();
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        st.add(a[i]);
+	        
+	       
+	        
+	    }
+	    System.out.print(st);
+	    
+	    
+	}
+}
+7.Write a program to array elements print all Positive number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]>0)
+	        {
+	            System.out.print(a[i]+" ");
+	        }
+	        
+	       
+	        
+	    }
+	    
+	}
+}
+8. Write a program to calculate the average value of array element
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    int sum=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        sum+=a[i];
+	        
+	       
+	        
+	    }
+	    System.out.print(sum/n);
+	   
+	    
+	    
+	}
+}
+9. Write a program in to find the sum of all elements of the array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int a []=new int[n];
+	    
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        a[i]=sc.nextInt();
+	        
+	    }
+	    int sum=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        sum+=a[i];
+	        
+	       
+	        
+	    }
+	    System.out.print(sum);
+	   
+	    
+	    
+	}
+}
+10.Write a program to merge two arrays elements to store third array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n1=sc.nextInt();
+	    int n2=sc.nextInt();
+	    int a []=new int[n1];
+	    int b []=new int[n2];
+	    int c []=new int[n1+n2];
+	    
+	    for(int i=0;i<n1;i++)
+	    {
+	        a[i]=sc.nextInt();
+	       
+	        
+	    }
+	    for(int i=0;i<n2;i++)
+	    {
+	         b[i]=sc.nextInt();
+	    }
+	  
+	    for(int i=0;i<n1;i++)
+	    {
+	        c[i]=a[i];
+	       
+	       
+	        
+	    }
+	    for(int i=0;i<n2;i++)
+	    {
+	        c[i+n1]=b[i];
+	    }
+	    for(int i=0;i<n1+n2;i++)
+	    {
+	        System.out.print(c[i]+" ");
+	    }
+	    
+	    
+	   
+	    
+	    
+	}
+}
+11.Write a program to get the canonical representation of the string object
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    List<Character> li=new ArrayList<>();
+	    
+	    String s=sc.next();
+	    int n=s.length();
+	    for(int i=0;i<n;i++)
+	    {
+	        
+	        li.add(s.charAt(i));
+	        
+	    }
+	    Collections.sort(li);
+	    String r="";
+	    for(int i=0;i<n;i++)
+	    {
+	        r+=li.get(i);
+	        
+	    }
+	    System.out.print(r);
+	    
+	   
+	    
+	    
+	   
+	    
+	    
+	}
+}
+12.12.Write a program to check whether a given string ends with the contents of 
+another string
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	   String s1=sc.next();
+	   String s2=sc.next();
+	   int i=s1.length()-1;
+	   int j=s2.length()-1;
+	   boolean b=false;
+	   while(i>=00 && j>=00)
+	   {
+	       if(s1.charAt(i)==s2.charAt(j)){
+	           b=true;
+	           i--;
+	           j--;
+	           
+	       }
+	       else
+	       {
+	           b=false;
+	           break;
+	       }
+	   }
+	   if(b){
+	       System.out.print("ends with another first string");
+	   }
+	   else
+	   {
+	       System.out.print("not ends with first string");
+	   }
+	    
+	   
+	    
+	   
+	    
+	    
+	   
+	    
+	    
+	}
+}
+16.Write a program to concatenate Two string
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	   String s1=sc.next();
+	   String s2=sc.next();
+	   
+	   String s3=s1+s2;
+	   System.out.print(s3);
+	    
+	   
+	    
+	   
+	    
+	    
+	   
+	    
+	    
+	}
+}
+17.Write a program to Count Number of Uppercase and Lowercase letters
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	   String s1=sc.next();
+	   int count1=0;
+	   int count2=0;
+	   for(int i=0;i<s1.length();i++)
+	   {
+	       char ch=s1.charAt(i);
+	       if(ch>='A' &&ch<='Z')
+	       {
+	           count1++;
+	       }
+	       else
+	       {
+	           count2++;
+	       }
+	       
+	   }
+	   System.out.println("upper case"+count1);
+	    System.out.println("lowe case"+count2);
+	   
+	    
+	   
+	    
+	   
+	    
+	    
+	   
+	    
+	    
+	}
+}
